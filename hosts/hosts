@@ -1,2 +1,2 @@
 [chatRoom]
-1.1.1.1 hostname='chatRoom' ansible_ssh_user='deploy_adm' ansible_ssh_port='54882' ansible_host=1.1.1.1
+185.167.13.244 hostname='chatRoom' ansible_ssh_user='deploy_adm' ansible_ssh_port='54882' ansible_host=185.167.13.244
