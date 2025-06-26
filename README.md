@@ -1,13 +1,7 @@
 # chatroom
 ├── hosts/hosts.ini # Inventory file
 
-└── roles 
-
-├── handlers/main.yml
-
-├── templates/
-
-├── files/
+├── roles 
 
 ├── vars/main.yml
 
