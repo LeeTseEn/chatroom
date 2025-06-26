@@ -1,0 +1,6 @@
+---
+- name: Install Kafka via role
+  hosts: "{{ model_name }}"
+  become: true
+  roles:
+    - install_kafka
