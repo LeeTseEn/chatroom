@@ -1,6 +1,6 @@
 ---
 - name: Install Kafka via role
-  hosts: "{{ model_name }}"
+  hosts: "{{ master_db_host }}"
   become: true
   become_user: root
   gather_facts: False
