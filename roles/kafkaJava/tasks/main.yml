@@ -60,7 +60,8 @@
     path: /home/swadmin/.bashrc
     line: 'export PATH=$PATH:{{ install_dir }}/bin'
     state: present
-  become: no
+  become: yes
+  become_user: swadmin
 
 - name: Write server.properties
   copy:
