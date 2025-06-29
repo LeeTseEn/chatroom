@@ -14,14 +14,16 @@
     path: /home/swadmin/.bashrc
     line: 'export JAVA_HOME={{ java_path.stdout | dirname | dirname }}'
     create: yes
-  become: no
+  become: yes
+  become_user: swadmin
 
 - name: Set PATH with JAVA_HOME
   lineinfile:
     path: /home/swadmin/.bashrc
     line: 'export PATH=$JAVA_HOME/bin:$PATH'
     create: yes
-  become: no
+  become: yes
+  become_user: swadmin
 
 - name: Download Kafka
   get_url:
