@@ -2,6 +2,7 @@
 - name:  Kafka install
   hosts: "{{ master_db_host }}"
   become: yes
+  become_method: sudo
   become_user: root
   gather_facts: False
   vars_files:
