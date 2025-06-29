@@ -1,7 +1,14 @@
 ---
 
-download_url: "https://downloads.apache.org/kafka/3.9.1/kafka_2.13-3.9.1.tgz"
-kafka_tgz: "kafka_2.13-3.9.1.tgz"
+    install_dir: /opt/lucky/kafka
+    log_dir: /opt/lucky/logs
+    kafka_log_file: /opt/lucky/logs/kafka.log
+    kafka_version: "3.9.1"
+    scala_version: "2.13"
+    kafka_tgz: "kafka_{{ scala_version }}-{{ kafka_version }}.tgz"
+    download_url: "https://downloads.apache.org/kafka/{{ kafka_version }}/{{ kafka_tgz }}"
+
+
 kafka_config: |
   process.roles=broker,controller
   node.id=1
