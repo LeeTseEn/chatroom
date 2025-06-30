@@ -1,7 +1,7 @@
 # chatroom
 ├── hosts/hosts.ini # Inventory file
 
-├── roles 
+├── roles/init_kafka+java
 
 ├── vars/main.yml
 
