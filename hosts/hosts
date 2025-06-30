@@ -1,5 +1,6 @@
 [all:vars]
 
 
-[chatRoom]
-185.167.13.244 hostname='chatRoom' ansible_ssh_user='deploy_adm' ansible_ssh_port='22' ansible_host=185.167.13.244
+[chatroom-kafka-redis]
+185.167.13.212 hostname='chatroom-kafka-redis' ansible_ssh_user='deploy_adm' ansible_ssh_port='22' ansible_host=185.167.13.212
+
